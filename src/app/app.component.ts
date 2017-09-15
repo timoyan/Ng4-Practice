@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  cv: string;
+
+  inputValueChange1(value: string) {
+    console.log(event.target);
+    console.log(value);
+    this.cv = value;
+  }
 }
